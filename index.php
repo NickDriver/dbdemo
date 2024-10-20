@@ -8,7 +8,7 @@ require("controllers/header.php");
 
 
 // Connection to MySQL server
-require("dbconnections/mysql.connection.php");
+// require("dbconnections/mysql.connection.php");
 
 // Connection to PostgreSQL server
 require("dbconnections/postgresql.connection.php");

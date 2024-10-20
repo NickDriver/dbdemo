@@ -1,0 +1,1 @@
+<h1 class="mt-10 text-3xl font-bold underline italic text-slate-800 text-center">Database Connection</h1>;

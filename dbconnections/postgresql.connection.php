@@ -1,8 +1,11 @@
 <?php
 $config = require("config.php");
 $db = $config["db"];
+$username = $db["username"];
+$password = $db["password"];
+echo var_dump($username, $password);
 
-$conn = new PDO("pgsql:host={$db["servername"]};port={$db["port"]};dbname={$db["dbname"]}, {$db["username"]}, {$db["password"]}");
+$conn = new PDO("pgsql:host={$db["servername"]};port={$db["port"]};dbname={$db["dbname"]}, $username, $password)");
 $statement = $conn->prepare("SELECT * FROM family");
 $statement->execute();
 $family = $statement->fetchAll(PDO::FETCH_ASSOC);

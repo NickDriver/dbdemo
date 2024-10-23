@@ -2,9 +2,7 @@
 
 return [
   'db' => [
-    'servername' => 'localhost',
-    'username' => "nickmaster",
-    'password' => "loveunix",
+    'host' => 'localhost',
     'dbname' => "dbdemo",
     'port' => 5432
   ]

@@ -4,7 +4,7 @@ require("Database.php");
 $config = require("config.php");
 
 
-$database = new Database($config["db"]);
+$database = new Database($config["db"], "nickmaster", "loveunix");
 $family = $database->query("SELECT * FROM family")->fetchAll();
 
 ?>

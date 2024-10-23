@@ -8,7 +8,6 @@ class Database
     public function __construct($db, $username = 'root', $password = '')
     {
         $dsn = 'pgsql:' . http_build_query($db, '', ';');
-        echo var_dump($dsn);
         $this->pdo = new PDO($dsn, $username, $password, [
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
